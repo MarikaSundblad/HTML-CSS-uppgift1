@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap%27');
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +6,15 @@
 }
 
 html, body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    line-height: 1.5;
+  font-family: 'Roboto', serif;
+  line-height: 1.5;
+  color: #626262;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.5;
+  color: #363636;
 }
 
 .container {
@@ -14,44 +22,106 @@ html, body {
     margin: auto;
   }
 
-  .btn-primary {
-    background-color: #;
-    color: #;
+  .btn {
+    background-color: #2BAAEC;
+    color: #fff;
   }
 
-  .btn-primary:hover {
-    
-  }
-  .bg-dark {
-    background-color: #;
-    color: #;
+  /* .btn-primary {
+    background-color: #2BAAEC;
+    color: #fff;
+  } */
+
+  .btn:hover {
+    background-color: #25E6C8;
   }
 
-  .bg-light {
-    background-color: #;
-    color: #;
-  }
-  
   a {
     text-decoration: none;
-    color: #000;
   }
 
-  a:hover {
-    color: #000;
+  .workinghours i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15rem;
   }
 
   .top-nav {
-      marig
-    padding: 0.2rem 1rem;
+    border-bottom: 1px solid #363636;
+    height: 3.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .top-nav .container, .navbar .container {
+  .top-nav .container, .navbar .container, .workinghours, .navbar-nav {
     display: flex;
     justify-content: space-between;
   }
 
   .navbar {
-    padding: 0.2rem 1rem;
+    padding: 2.5rem 0rem 2.5rem 0rem;
   }
 
+  .container a {
+    color: #2BAAEC;
+  }
+
+  .container a :hover {
+    color: #25E6C8;
+  }
+  
+  i {
+    color: #2BAAEC;
+  } 
+
+  .workinghours i {
+  display: inline-block;
+  margin-right: 1em;
+  }
+
+  .icons i {
+    display: inline-block;
+    margin-left: 1em;
+    }
+
+ .navbar-nav {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.1rem;
+   font-family: 'roboto Slab', serif;
+ }
+
+ .nav-link {
+   padding: 1rem 0rem 1rem 1rem;
+ }
+
+.navbar-nav a{
+  color: #363636;
+}
+
+  #showcase {
+    background-color: #DEDEDE;
+  }
+
+  #showcase .container {
+    display: flex;
+  }
+
+  #showcase .container img {
+    margin-top: 1.25rem;
+  }
+
+  .content {
+    align-self: center;
+    text-align: left;
+    padding: 3rem;
+    height: 100%;
+  }
+
+  .text {
+    margin-bottom: 3rem;
+  }
