@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +6,18 @@
 }
 
 html, body {
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto', san-serif;
   line-height: 1.5;
   color: #626262;
+}
+
+a {
+  text-decoration: none;
+  color: #2BAAEC;
+}
+
+a:hover {
+  color: #25E6C8;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,8 +27,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
   }
 
   .btn {
@@ -36,67 +46,64 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #25E6C8;
   }
 
-  a {
-    text-decoration: none;
-  }
-
-  .workinghours i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.15rem;
-  }
-
   .top-nav {
-    border-bottom: 1px solid #363636;
-    height: 3.3rem;
+    border-bottom: 1px solid #707070;
+    padding: 0.5rem;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
-  .top-nav .container, .navbar .container, .workinghours, .navbar-nav {
+  .top-nav .container, .navbar .container, .hours, .navbar-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .navbar {
-    padding: 2.5rem 0rem 2.5rem 0rem;
+    padding: 0.5rem;
   }
 
-  .container a {
+  .container .hours i, .container .icons {
+    color: #2BAAEC;
+  }
+
+  .container .icons:hover {
     color: #25E6C8;
   }
 
-  .container a :hover, {
-    color: #2BAAEC;
+  .container .hours i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
   }
   
-  i {
-    color: #2BAAEC;
-  } 
 
-  .workinghours i {
+  .hours i {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 0.5em;
   }
 
   .icons i {
     display: inline-block;
-    margin-left: 1em;
+    margin-left: 1.2em;
     }
 
  .navbar-nav {
    list-style: none;
    display: flex;
    justify-content: center;
-   align-items: center;
    font-size: 1.1rem;
    font-family: 'roboto Slab', serif;
  }
 
+.navbar-brand img {
+  height: 4rem;
+}
+
  .nav-link {
    padding: 1rem 0rem 1rem 1rem;
+   display: inline-block;
  }
 
 .navbar-nav a{
@@ -104,16 +111,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
   #showcase {
-    background-color: #DEDEDE;
+    background: #DEDEDE;
   }
 
   #showcase .container {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 85%;
   }
 
   #showcase .container img {
     margin-top: 1.25rem;
-    height: 30rem;
   }
 
   .content {
@@ -125,6 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .text {
     margin-bottom: 3rem;
+    
   }
 
   .text h1 {
@@ -139,13 +149,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .content .btn {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: bold;
     background-color: #25E6C8;
     border: none;
     border-radius: 8px;
     color: #fff;
-    padding: 0.7rem 2rem;
+    padding: 1.2rem 2.5rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -157,3 +167,27 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   /* dela upp bilden och h1 med text och knapp i 2 boxar. vänsterställ högerboxen så texten börjar på mitten av skärmen */
+
+  @media (min-width: 576px) {
+    .container, .container-sm {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container{
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container{
+      max-width: 1140px;
+    }
+  }
