@@ -65,11 +65,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .container a {
-    color: #2BAAEC;
+    color: #25E6C8;
   }
 
-  .container a :hover {
-    color: #25E6C8;
+  .container a :hover, {
+    color: #2BAAEC;
   }
   
   i {
@@ -113,6 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 
   #showcase .container img {
     margin-top: 1.25rem;
+    height: 30rem;
   }
 
   .content {
@@ -125,3 +126,34 @@ h1, h2, h3, h4, h5, h6 {
   .text {
     margin-bottom: 3rem;
   }
+
+  .text h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 3.5rem;
+  }
+
+  .text p {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  .content .btn {
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: #25E6C8;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 0.7rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .content .btn:hover {
+    color: #fff;
+    background-color: #2BAAEC;
+  }
+
+  /* dela upp bilden och h1 med text och knapp i 2 boxar. vänsterställ högerboxen så texten börjar på mitten av skärmen */
