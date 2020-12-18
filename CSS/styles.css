@@ -178,9 +178,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .bg-blue .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 2.5rem 0 2.5rem 0;
   }
 
@@ -195,6 +192,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
     font-weight: bold;
     margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   .btn-white:hover {
@@ -231,6 +229,15 @@ h1, h2, h3, h4, h5, h6 {
     #showcase .container .content h1 {
       font-size: 2rem;
     }
+
+    /* APPOINTMENT */
+  .bg-blue .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0 2.5rem 0;
+  }
+
   }
   
 
