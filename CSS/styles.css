@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif;
   line-height: 1.5;
   color: #363636;
+  font-weight: 400;
 }
 
 .container {
@@ -171,6 +172,78 @@ h1, h2, h3, h4, h5, h6 {
   .space {
     padding-bottom: 2rem;
   }
+
+  /* Services start */
+.grid-container {
+  width: 100%;
+    background-color: #f7f7f7;
+}
+
+.services h2 {
+  padding: 1rem 4.5rem 1rem 4.5rem;
+  border-bottom: 4px solid #25E6C8;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.services {
+  padding: 6rem 2rem 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#grid-section {
+  padding-bottom: 8rem;
+}
+
+#grid-section ul {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  width: 90%;
+  margin: auto;
+  list-style-type: none;
+  text-align: center;
+  grid-gap: 2rem;
+}
+
+#grid-section li {
+    height: 27.25rem;
+    padding: 4rem 3rem;
+    background: white;
+    border-radius: 0.8rem;
+}
+
+.tooth {
+  background: #25E6C8;
+  border-radius: 50%;
+  width: 6.80rem;
+  height: 6.80rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.tooth img {
+  height: 55%;
+  width: auto;
+}
+
+  /* #grid-section img {
+    width: 6.80rem;
+    height: 6.80rem;
+    background-color: #25E6C8;
+    border-radius: 50%;
+    padding: 1.5rem;
+  } */
+
+  #grid-section h4 {
+    padding: 2rem 1rem;
+  }
+
   /* Appointment start */
   .bg-blue {
     background-color: #2BAAEC;
@@ -230,6 +303,13 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 2rem;
     }
 
+    /* SERVICES */
+    #grid-section ul {
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      width: 90%;
+    }
+
     /* APPOINTMENT */
   .bg-blue .container {
     display: flex;
@@ -276,8 +356,14 @@ h1, h2, h3, h4, h5, h6 {
     #showcase .container img:not(.show) {
       display: flex;
     }
-  }
   
+   /* SERVICES */
+   #grid-section ul {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    width: 80%;
+  }
+  }
 
   @media (min-width: 992px) {
     .container{
@@ -287,11 +373,25 @@ h1, h2, h3, h4, h5, h6 {
     #showcase .container .content h1 {
       font-size: 3rem;
     }
+
+      /* SERVICES */
+    #grid-section ul {
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto;
+      width: 85%;
+    }
   }
 
   
   @media (min-width: 1200px) {
     .container{
       max-width: 1140px;
+    }
+
+    /* SERVICES */
+    #grid-section ul {
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto;
+      width: 80%;
     }
   }
