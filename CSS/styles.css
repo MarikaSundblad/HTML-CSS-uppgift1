@@ -146,6 +146,8 @@ h1, h2, h3, h4, h5, h6 {
   #showcase .container img {
     height: 31.25rem;
     margin-top: 1rem;
+    margin-left: -2rem;
+
   }
 
   #showcase .container img:not(.show) {
@@ -172,6 +174,59 @@ h1, h2, h3, h4, h5, h6 {
   .space {
     padding-bottom: 2rem;
   }
+
+  /* About us start */
+
+  #about-us {
+    padding-top: 5rem;
+  }
+
+  .about {
+    position: relative;
+  }
+
+  #about-us .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .about-us-numbers {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 3rem;
+  }
+
+  .numbers {
+    margin-right:5rem;
+  }
+
+  .about-us-info h2{
+    padding: 2rem 2rem 1rem 0;
+    margin-top: 5rem;
+    font-size: 2.7rem;
+  }
+
+  span {
+    color: #2BAAEC;
+  }
+
+  .line {
+    border-bottom: 4px solid #25E6C8;
+    margin-bottom: 1rem;
+  }
+
+  .about-us-info p {
+    padding-top: 1.5rem;
+  }
+
+  .about-us-numbers p {
+    font-size: 1.7rem;
+    color: #2BAAEC;
+  }
+
+
 
   /* Services start */
 .grid-container {
