@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #grid-section {
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
 }
 
 #grid-section ul {
@@ -216,6 +216,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.8rem;
 }
 
+#grid-section li:hover {
+  box-shadow: 1px 1px 13px 0.5px #707070;
+}
+
 .tooth {
   background: #25E6C8;
   border-radius: 50%;
@@ -227,34 +231,32 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
 }
 
+.tooth:hover {
+  background: #2BAAEC;
+  box-shadow: 0 0 0 10px rgb(43, 170, 236, 0.2);
+  transition: all 0.10s ease-in-out;
+}
+
 .tooth img {
   height: 55%;
   width: auto;
 }
 
-  /* #grid-section img {
-    width: 6.80rem;
-    height: 6.80rem;
-    background-color: #25E6C8;
-    border-radius: 50%;
-    padding: 1.5rem;
-  } */
-
   #grid-section h4 {
     padding: 0.75rem;
   }
-  ]
 
 
 
   /* Appointment start */
+
   .bg-blue {
-    background-color: #2BAAEC;
+    background-color: #2baaec;
     opacity: 80%;
   }
 
   .bg-blue .container {
-    padding: 2.5rem 0 2.5rem 0;
+    padding: 0.7rem 0 1.5rem 0;
   }
 
   .bg-blue .container h3 {
@@ -289,7 +291,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #f3fbff;
     opacity: 60%;
   }
-/* uppdatera */
+
+
 
 
   /* Media-queries */
@@ -298,7 +301,6 @@ h1, h2, h3, h4, h5, h6 {
     .container {
       max-width: 540px;
     }
-    /* MAIN MENU */
     
     /* SHOWCASE */
 
@@ -316,7 +318,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .services {
-      padding: 6rem 2rem 2rem 2rem;
+      padding: 5rem 2rem 2rem 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
